@@ -1,0 +1,55 @@
+# 파이썬 _ 네이버 자동 로그인
+### 네이버 자동 로그인 매크로를 쓰면, 영수증이 하나 뜨면서 자동 로그인이 차단된다.
+(나또한 네이버 영수증 리뷰를 적극적으로 하고있는데, 누군가 올렸을) 그 영수증이 보이기 전까지의 코드를 짜보았다.
+
+!pip install selenium
+
+!pip list
+
+!pip show selenium
+
+%pwd   # 현재위치
+
+!dir chromedriver.exe
+
+!pip install pillow
+
+from selenium import webdriver
+from PIL import Image
+import time
+import warnings
+warnings.filterwarnings(action='ignore')
+
+driver = webdriver.Chrome('chromedriver.exe')
+
+driver.get('https://www.naver.com/')
+time.sleep(1)  
+
+driver.save_screenshot('네이버1.png')
+
+Image.open('네이버1.png')
+
+xpath = '''//*[@id="account"]/a'''
+driver.find_element_by_xpath(xpath).click()
+time.sleep(1)  
+
+driver.save_screenshot('네이버2.png')
+
+Image.open('네이버2.png')
+
+xpath = '''//*[@id="id"]'''
+element_id = driver.find_element_by_xpath(xpath)
+element_id.clear()
+element_id.send_keys('myid')
+
+xpath = '''//*[@id="pw"]'''
+element_pw = driver.find_element_by_xpath(xpath)
+element_pw.clear()
+element_pw.send_keys('mypassword')
+
+xpath = '''//*[@id="log.login"]/span'''
+driver.find_element_by_xpath(xpath).click()
+
+driver.save_screenshot('네이버3.png')
+
+Image.open('네이버3.png')
