@@ -33,66 +33,32 @@ SELECT name FROM city
 WHERE countrycode = 'JPN'
 ```
 
-## Problem
-- Query a list of CITY and STATE from the STATION table.
+# SQL_HackerRank_Aggregation
 
-## Solution
+## Japan Population
 
+### Problem
+Query the sum of the populations for all Japanese cities in CITY. The COUNTRYCODE for Japan is JPN.
 
-```python
-SELECT city, state
-FROM station
-```
+### Solution
 
-## Problem
-- Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
+SELECT SUM(population)
+FROM city
+WHERE countrycode = 'JPN'
 
-## Solution
+## The Blunder
 
+### Problem
+키보드가 고장난 사만다의 이야기...
+Samantha was tasked with calculating the average monthly salaries for all employees in the EMPLOYEES table, but did not realize her keyboard's  key was broken until after completing the calculation. She wants your help finding the difference between her miscalculation (using salaries with any zeros removed), and the actual average salary.
 
-```python
-SELECT distinct city FROM station 
-WHERE id % 2 = 0
-```
+Write a query calculating the amount of error (i.e.:  average monthly salaries), and round it up to the next integer.
 
+problem link (https://www.hackerrank.com/challenges/the-blunder/problem?isFullScreen=true)
 
-```python
-#다른 풀이
-SELECT distinct city FROM station 
-WHERE MOD (id, 2) = 0
-```
+### Solution
+    - 0이 없는 계산값 : REPLACE() 사용
+    - 반올림 : CEIL() 사용
 
-## Problem
-- Query the list of CITY names starting with vowels (i.e., a, e, i, o, or u) from STATION. Your result cannot contain duplicates.
-
-## Solution
-
-
-```python
-SELECT DISTINCT city FROM station
-WHERE LEFT(city, 1) IN ('a', 'e', 'i', 'o', 'u')
-```
-
-## Problem
-- Query the list of CITY names ending with vowels (a, e, i, o, u) from STATION. Your result cannot contain duplicates.
-
-## Solution
-
-SELECT DISTINCT city FROM station
-WHERE RIGHT(city,1) IN ('a', 'e', 'i', 'o', 'u')
-
-## Problem
-- Query the list of CITY names from STATION which have vowels (i.e., a, e, i, o, and u) as both their first and last characters. Your result cannot contain duplicates.
-
-https://www.hackerrank.com/challenges/weather-observation-station-8/problem?isFullScreen=true&h_r=next-challenge&h_v=zen&h_r=next-challenge&h_v=zen
-
-## Solution
-
-
-```python
-SELECT DISTINCT city
-FROM station
-
-WHERE LEFT(city, 1) IN ('a', 'e', 'i', 'o', 'u')
-AND RIGHT(city, 1) IN ('a', 'e', 'i', 'o', 'u')
-```
+SELECT CEIL(AVG(salary) - AVG(REPLACE(salary, "0", "")))
+FROM employees
