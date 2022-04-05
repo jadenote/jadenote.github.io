@@ -1,4 +1,4 @@
-# SQL_HackerRank_Weather Observation Station 1-12
+# SQL_HackerRank_10
 
 ## Problem
 - Query all columns for a city in CITY with the ID 1661
