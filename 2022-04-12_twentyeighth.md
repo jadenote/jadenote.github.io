@@ -6,7 +6,7 @@ Query the sum of Northern Latitudes (LAT_N) from STATION having values greater t
 
 ## Solution
     - TRUNCATE(숫자, 자릿수) : 소수점 이하 몇 자리까지 남기고 버리기
-    - WHERE 절에서 비교연산자 AND로 연결하기 :  n1 < lat_n AND lat_n < n2
+    - WHERE 절에서 BETWEEN a AND b
 
 
 ```python
