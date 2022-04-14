@@ -1,6 +1,4 @@
-# Python_HackerRank_01
-
-## Python If-Else
+# Python_HackerRank_If-Else
 
 ### Problem
 
