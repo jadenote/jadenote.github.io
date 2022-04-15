@@ -1,4 +1,4 @@
-# SQL_HackerRank_11_Weather Observation 1-12
+# SQL_HackerRank_Weather Observation 1-12
 
 - problem link (https://www.hackerrank.com/challenges/weather-observation-station-1/problem?isFullScreen=true)
 
@@ -14,7 +14,16 @@ FROM station
 ```
 
 ## 2. Problem
-- 2번 문제는 사이트에 없었음 - PASS
+- Query the following two values from the STATION table:
+
+The sum of all values in LAT_N rounded to a scale of 2 decimal places.
+The sum of all values in LONG_W rounded to a scale of 2 decimal places.
+
+## Solution
+
+SELECT ROUND(SUM(lat_n), 2), ROUND(SUM(long_w), 2)
+FROM station
+
 
 ## 3. Problem
 - Query a list of CITY names from STATION for cities that have an even ID number. Print the results in any order, but exclude duplicates from the answer.
