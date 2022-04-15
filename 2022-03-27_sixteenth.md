@@ -1,4 +1,6 @@
-# SQL_LeetCode_1179.Reformat Department Table
+# SQL_LeetCode_Pivoting
+
+# 1179.Reformat Department Table
 결과값을 가로로 보기
 
 ## Problem
