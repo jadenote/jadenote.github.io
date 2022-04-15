@@ -1,4 +1,4 @@
-# SQL_HackerRank_11_Weather Observation 13-18
+# SQL_HackerRank_Weather Observation 13-18
 - problem link (https://www.hackerrank.com/challenges/weather-observation-station-13/problem?isFullScreen=true)
 
 ## 13. Problem
