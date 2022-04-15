@@ -1,4 +1,4 @@
-# SQL_HackerRank_10
+# SQL_HackerRank_SELECT / Aggregation / 키보드 고장난 사만다의 이야기...
 
 ## Problem
 - Query all columns for a city in CITY with the ID 1661
