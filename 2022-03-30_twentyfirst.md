@@ -1,4 +1,4 @@
-# Symmetric Pairs
+# SQL_HackerRank_Symmetric Pairs
 
 ## Problem
 Two pairs (X1, Y1) and (X2, Y2) are said to be symmetric pairs if X1 = Y2 and X2 = Y1.
