@@ -56,9 +56,8 @@ ORDER BY C.company_code
     - ORDER BY convert(decimal, substring(company_code, 2))
     - ORDER BY cast(company_code as unsigned integer) 
 
-![image.png](attachment:image.png)
-
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/99947811/166395667-16a34449-ef83-4ba4-861e-ad1f959294d8.png)
+![image](https://user-images.githubusercontent.com/99947811/166395678-f3f2b193-b9bc-4cfb-924c-2737d4c8ae03.png)
 
 -------------
 
@@ -78,4 +77,4 @@ ORDER BY C.company_code
     ORDER BY CAST(SUBSTR(company_code,2) AS UNSIGNED) ASC
 ```
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/99947811/166395646-bb716e1a-8537-4a57-9f0d-6800c13ee7f3.png)
