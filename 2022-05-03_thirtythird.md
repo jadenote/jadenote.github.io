@@ -1,6 +1,6 @@
 # SQL_HackerRank_Advanced Select_New Companies
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/99947811/166395535-77843e3c-2d10-4b3b-84a3-5035559601b6.png)
 
 ### Problem
 Given the table schemas below, write a query to print the company_code, founder name, total number of lead managers, total number of senior managers, total number of managers, and total number of employees. Order your output by ascending company_code.
