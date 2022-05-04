@@ -1,17 +1,17 @@
 # SQL_HackerRank_Weather Observation 19-20
 - problem link (https://www.hackerrank.com/challenges/weather-observation-station-19/problem?isFullScreen=true)
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/99947811/166617672-e73b7ab3-5131-4ca4-ab9e-c86d40bd36c7.png)
 
 ## 19. Problem
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/99947811/166617681-6b0411f0-00f2-4100-9b7f-dd11cfe15519.png)
 
 ## Solution
 
     - ROUND 함수를 사용함 (FORMAT(소수, 소숫점이하 자릿수) : 버림 기능)
     - 처음 풀이 틀렸어서 헤맸던 이유 : 괄호(괄호가 많아질 때, 자세히 보자)
     - Euclidean distance : 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/99947811/166617692-05370def-57ab-4377-a101-4a3f4dd494a1.png)
 
 #### Solution
 
@@ -44,7 +44,8 @@ FROM (SELECT @row_num := @row_num +1 as RowNumber, LAT_N FROM station ORDER BY L
 WHERE Sub.RowNumber in ((@row_num+1) / 2)
 ```
 
-![image-2.png](attachment:image-2.png)
+![image](https://user-images.githubusercontent.com/99947811/166617708-79b0ae86-e975-4ab1-b844-ad963b760032.png)
+
 
 ### 정답..이지만 오답인 이유 : 인덱스 수가 홀수, 짝수인 경우 둘 다 고려해서 쿼리짜기
 - 위 쿼리로 문제 정답은 맞았으나, 
@@ -69,7 +70,8 @@ FROM (SELECT @row_num := @row_num +1 as RowNumber, LAT_N FROM station ORDER BY L
 WHERE Sub.RowNumber in (FLOOR(@row_num)/2, CEIL(@row_num)/2)
 ```
 
-![image-2.png](attachment:image-2.png)
+![image](https://user-images.githubusercontent.com/99947811/166617731-39df7448-6fc3-463c-aa19-acabe4cd6ea2.png)
+
 
 ## Solution
 또 다른 풀이 방법 : PERCENT_RANK() 함수 사용할 수도 있음
