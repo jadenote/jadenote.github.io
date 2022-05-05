@@ -56,4 +56,4 @@ WHERE Marks BETWEEN Min_Mark AND Max_Mark
 ORDER BY Grade DESC, Name, Marks
 ```
 
-![image.png](attachment:image.png)
+![image](https://user-images.githubusercontent.com/99947811/166919296-8e5d2579-55ec-4c77-bc50-613535ecb096.png)
