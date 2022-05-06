@@ -31,8 +31,10 @@ SELECT IF(g.GRADE < 8, NULL, s.Name), g.Grade, s.Marks
 ORDER BY g.Grade DESC, s.Name, s.Marks
 ```
 
+
 ### Solution 02
-    - CASE WHEN ELSE END 구문 사용
+    - 칼럼 Alias를 사용하지 않은 쿼리도 가능
+    - 이 문제에서 두 테이블 (Students, Grades)에 공통 칼럼이 존재하지 않으므로 --> 칼럼명 앞에 Alias를 써서 구분하지 않고 심플한 쿼리도 가능함
 
 
 ```python
@@ -43,9 +45,10 @@ WHERE Marks BETWEEN Min_Mark AND Max_Mark
 ORDER BY Grade DESC, Name, Marks
 ```
 
+
+
 ### Solution 03
-    - 칼럼 Alias를 사용하지 않은 쿼리도 가능
-    - 이 문제에서 두 테이블 (Students, Grades)에 공통 칼럼이 존재하지 않으므로 --> 칼럼명 앞에 Alias를 써서 구분하지 않고 심플한 쿼리도 가능함
+    - CASE WHEN ELSE END 구문 사용
 
 
 ```python
@@ -55,5 +58,7 @@ SELECT CASE WHEN GRADE < 8 THEN NULL Else Name END, Grade, Marks
 WHERE Marks BETWEEN Min_Mark AND Max_Mark 
 ORDER BY Grade DESC, Name, Marks
 ```
+
+
 
 ![image](https://user-images.githubusercontent.com/99947811/166919296-8e5d2579-55ec-4c77-bc50-613535ecb096.png)
