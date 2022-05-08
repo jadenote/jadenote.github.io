@@ -2,6 +2,8 @@
 
 # SQL_Leetcode_**180. Consecutive Numbers**
 
+
+
 ## [Problem](https://leetcode.com/problems/consecutive-numbers/)
 
 ---
@@ -23,6 +25,8 @@ id is an autoincrement column.
 Write an SQL query to find all numbers that appear at least three times consecutively.
 
 Return the result table in **any order**.
+
+
 
 ## Solution
 
@@ -50,8 +54,10 @@ INNER JOIN LOGS AS log3
     AND log2.num = log3.num
 ```
 
+
+
 ## Result
 
 ---
 
-![Untitled](%E1%84%8E%E1%85%A2%E1%84%8C%E1%85%A2%E1%84%89%E1%85%A5%E1%86%AB%20120db7d8e3ee4c58a9bc110f7a74bc0d/Untitled.png)
+![image](https://user-images.githubusercontent.com/99947811/167286126-98d7949d-5231-4ef1-b2f6-c55c5bc3cd9e.png)
