@@ -1,5 +1,3 @@
-# 채재선
-
 # SQL_Leetcode_**180. Consecutive Numbers**
 
 
