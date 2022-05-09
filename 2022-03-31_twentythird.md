@@ -17,4 +17,4 @@ limit 1;
 
 
 
--- length(칼럼) 길이 함수 사용함. (Python에서는 Len() 함수임)
+-- length(칼럼명) 길이 함수 사용함. (Python에서는 Len() 함수임)
