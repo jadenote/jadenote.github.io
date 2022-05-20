@@ -36,3 +36,8 @@
             return False
     year = int(input())
     print(is_leap(year))
+    
+    
+    
+![image](https://user-images.githubusercontent.com/99947811/169520214-ffb60a24-4676-4a9d-bee9-0df9c183469d.png)
+
