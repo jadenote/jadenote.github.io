@@ -9,6 +9,7 @@ Link(https://www.hackerrank.com/challenges/full-score/problem?isFullScreen=true)
 - 초반에 풀이 헤맸던 이유 : 
     - 문제랑 점수테이블 보고 '만점 = 120 점'이라고 잘못 이해했음....
     - difficulty 테이블과 challenges 테이블 조인하여 난이도 별 만점 점수 확인해야함
+    - 참고(https://jogrammer.tistory.com/261)
 
 
 ```python
