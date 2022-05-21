@@ -1,8 +1,8 @@
-#HackerRank_Python_Find the Runner-Up Score
+# HackerRank_Python_Find the Runner-Up Score
 
 ## Problem
 ![image](https://user-images.githubusercontent.com/99947811/169661267-e733b13a-59f5-4a0d-bbe3-9d5f652d27a1.png)
-Link(https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem?isFullScreen=true&h_r=next-challenge&h_v=zen)
+Link(https://www.hackerrank.com/challenges/find-second-maximum-number-in-a-list/problem)
 
 ## Solution
 
